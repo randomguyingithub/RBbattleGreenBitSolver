@@ -2,8 +2,8 @@
 
 Only works for lvl 1, so sad
 
-#usage
+# Usage
 
-1. download thonny
+1. download and open thonny
 2. in thonny, tools->packages and install pygame from there
 3. run bombsolver.py
