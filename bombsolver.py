@@ -9,7 +9,7 @@
  Explanation video: http://youtu.be/mdTeqiWyFnc
 """
 import pygame
-import bitsolverClass
+#import bitsolverClass
 import bitsolverClasstest
 import copy
 # Define some colors
@@ -114,7 +114,7 @@ while not done:
                   grid = copy.deepcopy(gridbackup) 
                 if (not switch):
                     switch = True
-                    p1 = bitsolverClass.GreenBitSolver(maxcolumn,maxrow,2,grid)
+                    #p1 = bitsolverClass.GreenBitSolver(maxcolumn,maxrow,2,grid)
                     p2 = bitsolverClasstest.GreenBitSolver(maxcolumn,maxrow,2,grid)
                     #p1.printarr()
                     newgrid=p2.solver()
@@ -131,7 +131,10 @@ while not done:
             row = pos[1] // (HEIGHT + MARGIN)
             # Set that location to one
             if pos[0] <(MARGIN + WIDTH) * maxcolumn + MARGIN and pos[1]<(MARGIN + HEIGHT) * maxrow + MARGIN:
-                grid[row][column] = colormode
+                if grid[row][column]!=0:
+                    grid[row][column] = 0
+                else:
+                    grid[row][column] = colormode
             print("Click ", pos, "Grid coordinates: ", row, column)
  
     # Set the screen background
