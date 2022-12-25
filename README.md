@@ -1,6 +1,8 @@
 # RBbattleGreenBitSolver
 
-Only works for lvl 1, so sad
+Only works for lvl with 2 bombs only, so sad
+
+also very inefficient (4 nested for loop)
 
 # Usage
 1. download the code, put them inside the SAME folder
