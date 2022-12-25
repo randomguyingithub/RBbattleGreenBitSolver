@@ -10,4 +10,5 @@ Only works for lvl 1, so sad
 5. input where the red square are
 6. press "test" button
 7. enjoy some a bit lag 
+
 P.S: (press STOP button in thonny to close the solver in case there is problem)
